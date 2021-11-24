@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../app.dart';
 //import '../bottomNav.dart';
+// aqui se importan el paquete para app dart
 
+// esta es la clase para Home se usa un StalesWidget para implementar la funcion
+//de inicio junto con sus columnas, imagenes y texto
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,6 +18,7 @@ class Home extends StatelessWidget {
   }
 }
 
+//en esta columna se implentan el texto y la imagen
 Widget columnContent() {
   return Column(
     children: [
@@ -24,6 +28,7 @@ Widget columnContent() {
   );
 }
 
+// sirve para mandar a llamar a colocar la imagen
 Widget imageSection() {
   return Center(
     child: Image.asset(
@@ -35,6 +40,7 @@ Widget imageSection() {
   );
 }
 
+//sirve para mandar a llamar el texto
 Widget textoBody() {
   return Container(
     padding: EdgeInsets.only(top: 30, left: 20, right: 20, bottom: 50),
@@ -48,6 +54,7 @@ Widget textoBody() {
   );
 }
 
+//esto lo habia implementado el profesor
 Widget buttonSection() {
   Color color = Colors.black;
 
