@@ -6,6 +6,7 @@ import 'pages/perfil.dart';
 import 'pages/buscar.dart';
 import 'pages/boleto.dart';
 import 'pages/cronometro.dart';
+import 'button_widget.dart';
 //import 'pages/countdown-page.dart;';
 
 void main() => runApp(ParkingMall());
@@ -44,7 +45,7 @@ class _NavegacionEstado extends State<Navegacion> {
     Buscar(), // index 1
     Home(), // index 2
     Boleto(), // index 3
-    Center(child: Text('Temporizador')), // index 4
+    Cronometro(), // index 4
     // Cronometro(),
   ];
 
@@ -86,7 +87,7 @@ class _NavegacionEstado extends State<Navegacion> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.watch_later_rounded),
-              label: 'Cronómetro',
+              label: 'Reloj',
             ),
           ],
           currentIndex: indexActual,
